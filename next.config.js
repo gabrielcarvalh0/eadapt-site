@@ -1,12 +1,18 @@
-const { withContentlayer } = require("next-contentlayer");
+/** @type {import('next').NextConfig} */
+const path = require('path');
 
-module.exports = withContentlayer({
+const nextConfig = {
   reactStrictMode: false,
-  swcMinify: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'css')],
   },
-  redirects: require("./next-redirects"),
+  trailingSlash: true,
+  devIndicators: {
+    buildActivity: false,
+  },
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
+};
 
-
-});
+module.exports = nextConfig;
