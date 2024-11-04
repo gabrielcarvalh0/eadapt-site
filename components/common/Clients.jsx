@@ -6,7 +6,7 @@ function Clients() {
   const swiperOptions = {
     speed: 600,
     loop: true,
-    slidesPerView: 5,
+    slidesPerView: 2,
     spaceBetween: 40,
     centeredSlides: true,
     breakpoints: {
