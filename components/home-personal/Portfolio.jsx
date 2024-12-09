@@ -86,7 +86,7 @@ function Portfolio() {
                         href="/portfolio"
                         className="butn butn-sm butn-bord radius-30 align-items-center"
                       >
-                        <span className="hover-this">Ver todos Projetos</span>
+                        <span className="hover-this">Ver mais</span>
                       </Link>
                     </div>
                     </div>
