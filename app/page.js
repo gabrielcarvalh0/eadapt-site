@@ -9,15 +9,15 @@ import Navbar from '@/components/common/Navbar';
 import Script from 'next/script';
 import Header from '@/components/home-personal/Header';
 import Clients from '@/components/common/Clients';
-
-import Blog from '@/components/home-digital-agency/Blog';
-
-import Testimonials from '@/components/home-modern-studio/Testimonials';
+import Testimonials from '@/components/home-digital-agency/Testimonials';
 import Marq from '@/components/home-personal/Marq';
 import About from '@/components/home-personal/About';
 import Services from '@/components/home-personal/Services';
-import Skills from '@/components/home-personal/Skills';
 import Portfolio from '@/components/home-personal/Portfolio';
+import FloatingButtons from '@/components/common/FloatingButtons';
+import Map from '@/components/page-contact/Map';
+import InstagramSection from '@/components/common/InstagramSection';
+import Partners from '@/components/common/Partners';
 
 export const metadata = {
   title: 'E-Adapt: Transforme Seu Negócio com Especialistas em Marketing Digital',
@@ -32,6 +32,29 @@ export const metadata = {
     ]),
   },
 };
+const posts = [
+  'https://www.instagram.com/p/DBwswYJIdH2/',
+  'https://www.instagram.com/p/DBhWOC2OLR4/',
+  'https://www.instagram.com/p/C_5yXsHB9CY/',
+];
+
+const partnersData = [
+  { name: 'Parceiro 1', logo: '/assets/imgs/logos-p/1.svg' },
+  { name: 'Parceiro 2', logo: '/assets/imgs/logos-p/2.svg' },
+  { name: 'Parceiro 3', logo: '/assets/imgs/logos-p/3.svg' },
+  { name: 'Parceiro 4', logo: '/assets/imgs/logos-p/4.svg' },
+  { name: 'Parceiro 5', logo: '/assets/imgs/logos-p/5.svg' },
+  { name: 'Parceiro 6', logo: '/assets/imgs/logos-p/6.svg' },
+  { name: 'Parceiro 7', logo: '/assets/imgs/logos-p/7.svg' },
+  { name: 'Parceiro 8', logo: '/assets/imgs/logos-p/8.svg' },
+  { name: 'Parceiro 9', logo: '/assets/imgs/logos-p/9.svg' },
+  { name: 'Parceiro 10', logo: '/assets/imgs/logos-p/10.svg' },
+  { name: 'Parceiro 11', logo: '/assets/imgs/logos-p/11.svg' },
+  { name: 'Parceiro 12', logo: '/assets/imgs/logos-p/12.svg' },
+  { name: 'Parceiro 13', logo: '/assets/imgs/logos-p/13.svg' },
+  { name: 'Parceiro 14', logo: '/assets/imgs/logos-p/14.svg' },
+  { name: 'Parceiro 15', logo: '/assets/imgs/logos-p/15.svg' },
+];
 
 export default function Home() {
   return (
@@ -39,6 +62,7 @@ export default function Home() {
       <LoadingScreen />
       <Cursor />
       <ProgressScroll />
+      <FloatingButtons/>
       <Lines />
       <Navbar />
       <div id="smooth-wrapper">
@@ -49,12 +73,15 @@ export default function Home() {
             <About />
             <Services />
             <Portfolio />
-            {/* <Skills /> */}
+           <Partners partners={partnersData}/>
             <Testimonials />
             <Clients />
+            <InstagramSection posts={posts} />
+
             {/* <Blog /> */}
             <Marq2 />
           </main>
+          <Map />
           <Footer />
         </div>
       </div>

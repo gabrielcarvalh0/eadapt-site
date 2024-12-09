@@ -29,7 +29,7 @@ function Services() {
                 <div className="icon mb-20 opacity-5">
                   <img src={item.img} alt="" />
                 </div>
-                <p>{item.desc.slice(0, 50)} </p>
+                <p>{item.desc.slice(0, 150)} </p>
               </div>
             </div>
           ))}

@@ -76,10 +76,10 @@ function Footer() {
         <div className="pt-30 pb-30 mt-80 bord-thin-top">
           <div className="text-center">
             <p className="fz-14">
-              © 2024 orgulhosamente desenvolvido com{' '}
+              © 2024 Orgulhosamente desenvolvido por {' '}
               <span className="underline main-color">
                 <a href="https://e-adapt.com.br/" target="_blank">
-                  E-adapt
+                 E-Adapt
                 </a>
               </span>
             </p>

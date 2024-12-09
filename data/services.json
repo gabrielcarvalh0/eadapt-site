@@ -1,26 +1,20 @@
 [
   {
-    "title": "Digital Product Design",
+    "title": "Identidade Visual",
     "img": "/assets/imgs/serv-icons/3.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "desc": "Desenvolvemos logotipos, manuais de identidade visual e todos os elementos necessários para posicionar sua marca de forma única no mercado.",
     "link": "/page-services-details"
   },
   {
-    "title": "Web Developments",
+    "title": "Gestão de E-commerce",
     "img": "/assets/imgs/serv-icons/4.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "desc": "Gestão completa do seu e-commerce, com foco em tráfego pago, integração eficiente a marketplaces e estratégias para impulsionar suas vendas.",
     "link": "/page-services-details"
   },
   {
-    "title": "Branding Design",
+    "title": "Mídias e Conteúdo",
     "img": "/assets/imgs/serv-icons/5.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
-    "link": "/page-services-details"
-  },
-  {
-    "title": "UI-UX Design",
-    "img": "/assets/imgs/serv-icons/5.png",
-    "desc": "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    "desc": "Gerenciamos suas redes sociais com planejamento estratégico, criação de conteúdo original e postagens que geram engajamento.",
     "link": "/page-services-details"
   }
 ]

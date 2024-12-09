@@ -5745,7 +5745,7 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .work-crev .swiper-slide {
-  width: 70vw !important;
+  width: 100% !important;
 }
 
 .work-crev .item .cont h2 {
@@ -7439,6 +7439,7 @@ footer.clean-footer.crev .circle-blur {
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
+  max-height: 536px;
 }
 
 .testimonials .img-full .fix-img {
@@ -8458,8 +8459,233 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .video-item {
-  width: 35%; /* Cada vídeo ocupa 48% da largura da coluna */
+  width: 50%; /* Cada vídeo ocupa 48% da largura da coluna */
   height: auto; /* Mantém a proporção dos vídeos */
   border-radius: 8px; /* Borda arredondada para estilo */
   object-fit: cover; /* Garante que a imagem do vídeo preencha todo o elemento */
+}
+
+/* Estilo geral dos botões */
+.floating-button {
+  position: fixed;
+  z-index: 11;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Botão WhatsApp */
+.floating-whatsapp {
+  bottom: 32px;
+  left: 20px;
+  background-color: #25d366;
+  animation: pulse-dissolve 2s infinite;
+}
+
+/* Botão Telefone */
+.floating-phone {
+  bottom: 100px;
+  left: 20px;
+  background-color: #ba6ce5;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+}
+
+/* Container dos botões */
+.floating-button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 11;
+}
+
+/* Mensagem animada */
+.message {
+  opacity: 0;
+  margin-left: 46px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #25d366;
+  background: #25d366;
+  border-radius: 40px;
+  padding: 9px 16px;
+  color: #fff;
+  margin-bottom: 18px;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Animação de pulsar e dissolver (WhatsApp) */
+@keyframes pulse-dissolve {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 8px rgba(37, 211, 102, 0.5);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+    box-shadow: 0 0 16px rgba(37, 211, 102, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 8px rgba(37, 211, 102, 0.5);
+  }
+}
+
+/* Responsivo: Ajuste para telas menores */
+@media (max-width: 768px) {
+  .floating-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .floating-whatsapp {
+    bottom: 24px;
+    left: 16px;
+  }
+
+  .floating-phone {
+    bottom: 80px;
+    left: 16px;
+  }
+
+  .message {
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .floating-whatsapp {
+    bottom: 16px;
+    left: 12px;
+  }
+
+  .floating-phone {
+    bottom: 60px;
+    left: 12px;
+  }
+
+  .message {
+    font-size: 10px;
+    padding: 6px 10px;
+    margin-left: 36px;
+  }
+}
+
+.button-el-next{
+  position: static;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+}
+
+.gallery-container {
+  position: relative;
+}
+
+.swiper-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 10; /* Garantir que os botões fiquem visíveis acima dos outros elementos */
+}
+
+.gallery-swiper-button-next,
+.gallery-swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 15;
+}
+
+
+.header {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Cobre a tela inteira */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta para cobrir todo o espaço */
+  z-index: -2; /* Coloca atrás da camada de escurecimento */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Escurecimento com opacidade */
+  z-index: -1; /* Fica entre o vídeo e o conteúdo */
+}
+
+.header .container {
+  position: relative;
+  z-index: 1; /* Certifica que o texto aparece acima da camada de escurecimento */
+}
+
+h1, p {
+  color: #fff; /* Garante boa legibilidade sobre o fundo escuro */
+}
+
+.main-color {
+  color: #ff7f50; /* Exemplo de cor de destaque */
+}
+
+
+.partner-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 80px;
+  filter: brightness(0) invert(1); /* Garante que as logos brancas se destaquem */
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  transform: scale(2.5)
+}
+
+.video-container {
+  max-width: 100%;   /* Garante que o vídeo ocupe no máximo 100% do seu contêiner */
+  height: auto;      /* Mantém a proporção do vídeo */
+  object-fit: cover; /* Ajusta o vídeo para cobrir o espaço disponível sem distorção */
+  border-radius: 8px; /* Adiciona borda arredondada, se desejar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra sutil */
 }

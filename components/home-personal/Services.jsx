@@ -1,103 +1,48 @@
-import React from "react";
+import React from 'react';
+import data from '@/data/services';
 
 function Services() {
   return (
-    <section id="services" className="services-clas">
-      <div className="container section-padding bord-bottom-grd pt-0">
+    <section className="services-crev section-padding">
+      <div className="container">
         <div className="sec-head mb-80">
-          <div className="d-flex align-items-center">
-            <div>
-              <span className="sub-title main-color mb-5">
-                Nossas Especialidades
+          <div className="mb-30">
+            <h2 className="fw-600 fz-70 text-u d-rotate wow">
+              <span className="rotate-text">
+             <span className="fw-200">Serviços em </span>
+                {" "} Destaque
               </span>
-              <h3 className="fw-600 fz-50 text-u d-rotate wow">
-                <span className="rotate-text">
-                  Serviços em <span className="fw-200">Destaque.</span>
-                </span>
-              </h3>
-            </div>
-            <div className="ml-auto vi-more">
-              <a
-                href="#"
-                className="butn butn-sm butn-bord radius-30"
-              >
-                <span>Ver todos</span>
-              </a>
-              <span className="icon ti-arrow-top-right"></span>
-            </div>
+            </h2>
           </div>
+          <h6 className="sub-title main-color d-flex align-items-center">
+            <span>Nossas Especialidades            </span>
+            <span className="thin"></span>
+          </h6>
         </div>
-        <div className="row">
-          <div className="col-lg-4">
-            <div className="item sub-bg md-mb30">
-              <div className="icon-img-60 opacity-5 mb-40">
-                <img src="/assets/imgs/serv-icons/3.png" alt="" />
-              </div>
-              <h5>Identidade de Marca e Visual</h5>
-              <div className="text mt-40">
-                <div className="mb-10">
-                  <span className="tag"> UI/UX</span>
-                  <span className="tag">Design grafico</span>
+        <div className="row sm-marg">
+          {data.map((item, i) => (
+            <div key={i} className="col-lg-4 col-md-4">
+              <div className="item-box radius-15 md-mb30">
+                <h5 className="mb-60 text-u" style={{fontSize: '17px'}}>
+                  {item.title}
+                </h5>
+                <div className="icon mb-20 opacity-5">
+                  <img src={item.img} alt="" />
                 </div>
-                <p>
-                  Desenvolvemos logotipos, manuais de identidade visual e todos
-                  os elementos necessários para posicionar sua marca de forma
-                  única no mercado.
-                </p>
+                <p>{item.desc.slice(0, 150)} </p>
               </div>
-              <a href="#-details" className="mt-40">
-                <span className="ti-arrow-top-right"></span>
-              </a>
             </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="item sub-bg md-mb30">
-              <div className="icon-img-60 opacity-5 mb-40">
-                <img src="/assets/imgs/serv-icons/4.png" alt="" />
-              </div>
-              <h5>Sites e Lojas Virtuais</h5>
-              <div className="text mt-40">
-                <div className="mb-10">
-                  <span className="tag">Ecommerce</span>
-                  <span className="tag">Sites</span>
-                </div>
-                <p>
-                Desenvolvemos sites e lojas virtuais funcionais, com um design atrativo e foco na melhor experiência para seus clientes. Priorizamos a usabilidade e a estética para atender às expectativas do seu público.
-
-
-
-
-
-
-
-                </p>
-              </div>
-              <a href="#-details" className="mt-40">
-                <span className="ti-arrow-top-right"></span>
-              </a>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="item sub-bg">
-              <div className="icon-img-60 opacity-5 mb-40">
-                <img src="/assets/imgs/serv-icons/5.png" alt="" />
-              </div>
-              <h5>Gestão de Mídias e Conteúdo</h5>
-              <div className="text mt-40">
-                <div className="mb-10">
-                  <span className="tag"> Social Media</span>
-                  <span className="tag"> Conteúdo</span>
-                </div>
-                <p>
-                  Gerenciamos suas redes sociais com planejamento estratégico,
-                  criação de conteúdo original e postagens que geram
-                  engajamento.
-                </p>
-              </div>
-              <a href="#-details" className="mt-40">
-                <span className="ti-arrow-top-right"></span>
-              </a>
-            </div>
+          ))}
+        </div>
+        <div className="sec-bottom mt-100">
+          <div className="main-bg d-flex align-items-center">
+            <p>Descubra o poder do digital agora mesmo!</p>
+            <a
+              href="/page-contact"
+              className="butn main-color ml-40 underline"
+            >
+              <span>Entrar em contato</span>
+            </a>
           </div>
         </div>
       </div>

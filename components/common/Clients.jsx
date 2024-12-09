@@ -54,13 +54,7 @@ function Clients() {
             className="swiper-container"
             data-swiper="container"
           >
-            <SwiperSlide>
-              <div className="item">
-                <div className="img icon-img-100">
-                  <img src="/assets/imgs/logos/logo1.svg" alt="" />
-                </div>
-              </div>
-            </SwiperSlide>
+           
             <SwiperSlide>
               <div className="item">
                 <div className="img icon-img-100">
@@ -86,6 +80,48 @@ function Clients() {
               <div className="item">
                 <div className="img icon-img-100">
                   <img src="/assets/imgs/logos/logo5.svg" alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="item">
+                <div className="img icon-img-100">
+                  <img src="/assets/imgs/logos/logo6.svg" alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="item">
+                <div className="img icon-img-100">
+                  <img src="/assets/imgs/logos/logo7.webp" alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="item">
+                <div className="img icon-img-100" style={{ width: '160px' }}>
+                  <img src="/assets/imgs/logos/logo8.svg" alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="item">
+                <div className="img icon-img-100">
+                  <img src="/assets/imgs/logos/logo9.svg" alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="item">
+                <div className="img icon-img-100" style={{ width: '160px' }}>
+                  <img src="/assets/imgs/logos/logo10.png" alt="" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="item">
+                <div className="img icon-img-100">
+                  <img src="/assets/imgs/logos/logo11.svg" alt="" />
                 </div>
               </div>
             </SwiperSlide>
