@@ -15,13 +15,13 @@ const FloatingButtons = () => {
       {/* Botão do WhatsApp */}
       <WhatsAppButton />
       {/* Botão do Telefone */}
-      <button
+      {/* <button
         onClick={handlePhoneClick}
         className="floating-button floating-phone"
         aria-label="Telefone"
       >
         <Phone size={28} weight="fill" color="white" />
-      </button>
+      </button> */}
     </>
   );
 };

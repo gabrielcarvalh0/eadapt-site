@@ -8689,3 +8689,21 @@ h1, p {
   border-radius: 8px; /* Adiciona borda arredondada, se desejar */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra sutil */
 }
+
+.sec-bottom {
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.main-bg {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.sec-bottom:hover {
+  transform: scale(1.07);
+}

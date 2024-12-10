@@ -1,11 +1,18 @@
 'use client';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
 
 function Clients() {
   const swiperOptions = {
+    modules: [Autoplay],
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false, 
+    },
     speed: 600,
     loop: true,
+    autoplay: true,
     slidesPerView: 2,
     spaceBetween: 40,
     centeredSlides: true,

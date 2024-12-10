@@ -14,7 +14,7 @@ function Footer() {
             <div className="column md-mb50">
               <h6 className="sub-title mb-30">Contato</h6>
               <h6 className="p-color fw-400">
-              R. XV de Novembro, 2903 - <br /> Somenzari, Marília
+              R. XV de Novembro, 2903 - <br /> Somenzari, Marília - SP
               </h6>
               <h6 className="mt-30 mb-15">
                 <a href="#0">contato@e-adapt.com.br</a>
@@ -53,22 +53,22 @@ function Footer() {
                 </button>
               </div>
               <ul className="rest social-icon d-flex align-items-center">
-                <li className="hover-this cursor-pointer">
-                  <a href="https://www.facebook.com/eadaptoficial/" className="hover-anim">
+                  <a href="https://www.facebook.com/eadaptoficial/"  target="_blank"  className="hover-anim hover-this cursor-pointer">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                </li>
-           
-                <li className="hover-this cursor-pointer ml-10">
-                  <a href="https://www.youtube.com/@e-adapt" className="hover-anim">
+        
+                  <a href="https://www.youtube.com/@e-adapt" target="_blank"   className="hover-anim hover-this cursor-pointer ml-10">
                     <i className="fab fa-youtube"></i>
                   </a>
-                </li>
-                <li className="hover-this cursor-pointer ml-10">
-                  <a href="https://www.instagram.com/eadaptoficial/" className="hover-anim">
+                  <a href="https://www.instagram.com/eadaptoficial/"  target="_blank"  className="hover-anim hover-this cursor-pointer ml-10">
                     <i className="fab fa-instagram"></i>
                   </a>
-                </li>
+                  <a href="https://www.tiktok.com/@eadaptoficial/"  target="_blank"  className="hover-anim hover-this cursor-pointer ml-10">
+                    <i className="fab fa-tiktok"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/company/e-adapt/"  target="_blank"  className="hover-anim hover-this cursor-pointer ml-10">
+                    <i className="fab fa-linkedin"></i>
+                  </a>
               </ul>
             </div>
           </div>

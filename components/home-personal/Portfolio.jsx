@@ -35,7 +35,7 @@ function Portfolio() {
               <span className="sub-title main-color mb-5">Nosso Portfólio</span>
               <h3 className="fw-600 fz-50 text-u d-rotate wow">
                 <span className="rotate-text">
-                  <span className="fw-200"> Projetos em </span> Destaque.
+                  <span className="fw-200"> Projetos em </span> Destaque
                 </span>
               </h3>
             </div>
@@ -61,7 +61,7 @@ function Portfolio() {
                       {item.tags.join(" / ")}
                     </h6>
                     <h4>{item.title}</h4>
-                    <p>{item.subTitle}</p>
+                    <p className="mt-15">{item.subTitle}</p>
                     {item.cta && (
                       <p>
                         <strong>{item.cta}</strong>
