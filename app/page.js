@@ -35,7 +35,7 @@ export const metadata = {
 const posts = [
   'https://www.instagram.com/p/DBwswYJIdH2/',
   'https://www.instagram.com/p/DBhWOC2OLR4/',
-  'https://www.instagram.com/p/C_5yXsHB9CY/',
+  'https://www.instagram.com/p/DDPPyKBsN89/',
 ];
 
 const partnersData = [
@@ -54,6 +54,16 @@ const partnersData = [
   { name: 'Parceiro 13', logo: '/assets/imgs/logos-p/13.svg' },
   { name: 'Parceiro 14', logo: '/assets/imgs/logos-p/14.svg' },
   { name: 'Parceiro 15', logo: '/assets/imgs/logos-p/15.svg' },
+  { name: 'Parceiro 16', logo: '/assets/imgs/logos-p/16.svg' },
+  { name: 'Parceiro 17', logo: '/assets/imgs/logos-p/17.svg' },
+  { name: 'Parceiro 18', logo: '/assets/imgs/logos-p/18.svg' },
+  { name: 'Parceiro 19', logo: '/assets/imgs/logos-p/19.svg' },
+  { name: 'Parceiro 20', logo: '/assets/imgs/logos-p/20.svg' },
+  { name: 'Parceiro 21', logo: '/assets/imgs/logos-p/21.svg' },
+  { name: 'Parceiro 22', logo: '/assets/imgs/logos-p/22.svg' },
+  { name: 'Parceiro 23', logo: '/assets/imgs/logos-p/23.svg' },
+
+
 ];
 
 export default function Home() {
